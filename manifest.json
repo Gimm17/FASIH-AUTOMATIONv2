@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "FASIH Duplicate Assignment Automation",
+  "version": "0.1.0",
+  "description": "Automasi pengecekan duplikat assignment pada website FASIH (read-only, user-assisted).",
+  "permissions": ["storage", "downloads", "activeTab", "scripting", "sidePanel", "tabs"],
+  "host_permissions": [
+    "https://fasih-sm.bps.go.id/*",
+    "http://localhost:20128/*",
+    "http://127.0.0.1:20128/*"
+  ],
+  "action": {
+    "default_title": "FASIH Duplicate Automation"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://fasih-sm.bps.go.id/*"],
+      "js": ["content/fasih-content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

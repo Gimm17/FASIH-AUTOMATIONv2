@@ -1,0 +1,32 @@
+{
+  "name": "fasih-duplicate-automation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome Extension MV3 — Automation Pengecekan Duplikat Assignment FASIH",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^24.1.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4",
+    "vitest": "^2.0.5"
+  }
+}

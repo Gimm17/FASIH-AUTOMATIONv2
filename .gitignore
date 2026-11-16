@@ -1,0 +1,17 @@
+node_modules/
+dist/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+coverage/
+.vitest/
+# Never commit credentials or sample user data with real assignment IDs
+secrets.json
+**/*.local
+*.xlsx
+*.xls
+claude --resume *.txt
+nul
