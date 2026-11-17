@@ -15,3 +15,11 @@ secrets.json
 *.xls
 claude --resume *.txt
 nul
+
+# Security: ignore environment, cPanel, and secret files
+!.env.*.example
+cpanel.txt
+*cpanel*.txt
+*CPANEL*.txt
+*secret*.txt
+pwsupersecretcpanel.txt
